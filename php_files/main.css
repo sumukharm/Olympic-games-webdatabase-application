@@ -1,0 +1,138 @@
+*{
+  margin:0px;
+  padding:0px;
+  -webkit-border-radius:25;
+  
+ }
+
+h1{
+  font:bold 25px tahoma;
+  text-shadow:rgb(110,110,110) 3px 3px 5px;
+  color:black;
+}
+
+h2{
+  font:bold 20px tahoma;
+}
+
+header,nav,section,footer,article,aside{
+ display:block;
+}
+body{
+ text-align:center;
+
+ background-image:url(pic2.jpg); height:200%; width:100%;
+ background-repeat:no-repeat;
+ background-position:0px 100%;
+<!-- background:-webkit-linear-gradient(top,gray,black);-->
+ 
+}
+
+#content {position:relative; z-index:1; padding:0px;}
+
+#page-background {
+ position:fixed; 
+  top:0;  
+  left:0; 
+  width:100%; 
+ height:100%;
+ }
+ 
+#big_wrapper{
+  width:1000px;
+  height:100%;
+  margin:0px auto;
+  text-align:left;
+  background:#E6E6E6;
+}
+#the_header{
+ background:#E6E6E6;
+ text-align:center;
+ margin:0px;	
+ padding:35px;
+ background-image:url(olympic_rings1.jpg);
+ background-repeat:no-repeat;
+ background-position:783px 0px;
+ color:black;
+}
+
+#navigation{
+background:-webkit-linear-gradient(top,black,gray	);
+ color:black;
+ border:1px solid gray;
+ display:block;
+ height:30px;
+ -webkit-border-radius:25;
+ -webkit-box-shadow:rgb(110,110,110,) 8px 8px 8px;
+ }
+
+#navigation li{
+ display:inline-block;
+ list-style:none;
+ padding:5px;
+ height:20px;
+ font:bold 14px tahoma;
+
+
+}
+#the_main{
+ float:left;
+ width:500px;
+ margin:30px;
+ height:450px;
+}
+#the_news{                     
+ float:right;
+ width:215px;
+ padding:30px;
+ background:#E6E6E6;
+ color:black;
+ height:450px;
+  ;
+ }
+#the_footer{
+ clear:both;
+ text-align:center;
+ padding:35px;
+ border-top: 1px solid black;
+background:-webkit-linear-gradient(top,gray,black);
+ color:white;
+}
+
+.navlinks{
+	 background:-webkit-linear-gradient(top,black,gray);
+    display:block;
+ -webkit-border-radius:25;
+ -webkit-box-shadow:rgb(110,110,110,) 8px 8px 8px;
+ 
+	
+}
+.navlinks li{
+	float:left ;
+	background:-webkit-linear-gradient(top,black,gray);
+	 display:inline-block;
+ list-style:none;
+ padding:5px;
+ font:bold 14px tahoma;
+ display:inline-block;
+ list-style:none;
+ padding:5px;
+ font:bold 14px tahoma;
+
+
+}
+.links{
+	height: 100%;
+	width:100px;
+	text-align: left;
+	
+	color: white;
+}
+.links a{
+	text-decoration: none;
+	display:inline-block;
+	color: white;
+}
+.links a:hover{
+	color:orange;
+}

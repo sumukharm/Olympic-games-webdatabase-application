@@ -1,0 +1,163 @@
+<!--<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Login Page</title>
+<link rel="stylesheet" href="main.css">
+
+
+</head>
+<body>
+ <div id="big_wrapper">
+   <header id="the_header">
+    <h1>OLYMPIC GAMES DATABASE</h1>
+   </header>
+   <nav id="navigation">
+	<ul>
+		<li><a href="test2.html">HOME</a></li>
+		<li>DATABASES</a></li>
+		<li><a href="login.html">LOGIN</a></li>
+	</ul>
+   </nav>
+    <div id="new_div">
+   <section id="the_main">
+    <article>
+	 <h2>Admin please enter your details</h2><br/><br/>username:
+	 <input type="text" value=""/><br />password:
+	 <input type="password" value=""/>
+	 <input type="button" value="submit" onclick="window.location.href='file:///C:/Users/Sharan%20kumar/Desktop/dbms%20project/alter_database.html'" />
+	 <p><a href="alter_database.html">Login</a></p>
+        
+
+ 	</article>
+	<article>
+	</article>
+   </section>
+   </div>
+ 
+   <div>
+   <aside id="the_news">
+     <h2>NEWS </h2>
+	   <h3>next</h3>
+	   The next olympic games is in 2016
+	    <h3>next</h3>
+	   The next olympic games is in australia
+   
+   </div>
+   <footer id="the_footer">
+   
+    
+  </footer>
+ </div>
+</body>
+</html>-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Login Page</title>
+<link rel="stylesheet" href="main.css">
+<script type = "text/javascript">
+
+
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+
+var unArray = ["Sharan", "Sumukha", "Rahul", "VivekRaj"];  
+var pwArray = ["Password1", "Password2", "Password3", "Password4"];  
+
+for (var i=0; i < unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+
+if (valid) {
+//alert ("Login was successful");
+window.location = "alter_database.html";
+return false;
+}
+
+var t = " tries";
+if (count == 1) {t = " attempts"}
+
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+
+}
+
+else {
+alert ("Still incorrect! You have no more attempts left!");
+document.myform.username.value = "No more attempts allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+
+}
+
+</script>
+
+
+</head>
+<body>
+<div style="width:100%;height:100%;background-image:url('olympic3.jpg');background-repeat:no-repeat;background-size:cover;opacity:1.0;">	
+ <div id="big_wrapper">
+   <header id="the_header">
+    <h1>OLYMPIC GAMES DATABASE</h1>
+   </header>
+  <nav id="navigation">
+  <div class="navlinks">
+		<ul>
+			<li><div class="links"><a href="test2.html">Home</a></div></li>
+			<li><div class="links"><a href="database.html">Databases</a></div></li>
+			<li><div class="links"><a href="login.html">Login</a></div></li>
+		</ul>
+	</div>
+	</nav>
+    <div id="new_div">
+   <section id="the_main">
+   
+    <article><br /><br />
+	 <h2>Admin please enter your details</h2><br/><br/>
+	 <form name = "myform">
+       <p>ENTER USER NAME&nbsp <input type="text" name="username"><br> <br>
+	   ENTER PASSWORD &nbsp <input type="password" name="pword"> <br><br>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="button" style="align:centre" value="Login" name="Submit" onclick= "validate() ">
+</p>
+</form>
+ <img  style=" position:absolute; top:180px; left:500px;; padding:10px;" src="olympic3.jpg"   width="350" height="350" />
+</article>
+	<article>
+	</article>
+   </section>
+   </div>
+ 
+   <div>
+  <aside id="the_news">
+     <h2>NEWS </h2>
+	   
+	  <a href="http://www.rio2016.com"> The next olympic games is in 2016</a><br/><br/>
+	  <a href="http://www.rio2016.com"> <img  style="1top:380px; left:750px;; padding:10px;" src="pic18.jpg"   width="150" height="100" /></a><br />
+
+	    
+	   <a href="http://www.olympic.org">The next olympic games is in Brazil</a><br/>
+	   	  <img  style=" top:180px; left:550px;; padding:10px;" src="pic11.jpg"   width="170" height="100" />
+
+   </div>
+   <footer id="the_footer">
+   
+    
+  </footer>
+ </div>
+</body>
+</html>
+
