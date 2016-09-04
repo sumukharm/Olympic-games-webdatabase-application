@@ -1,0 +1,123 @@
+<!--<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Olympics Database</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <div id="big_wrapper">
+   <header id="the_header">
+    <h1>OLYMPIC GAMES DATABASE</h1>
+	
+   </header>
+   <nav id="navigation">
+	<ul>
+		<li><a href="test2.html">HOME</a></li>
+		<li><a href="database.html">DATABASES</a></li>
+		<li><a href="login.html">LOGIN</a></li>
+	</ul>
+   </nav>
+  
+   <div>
+   <aside id="the_news">
+     <h2>NEWS </h2>
+	   <h3>next</h3>
+	   The next olympic games is in 2016
+	    <h3>next</h3>
+	   The next olympic games is in australia
+ 
+   </div>
+   <footer id="the_footer">
+   
+    
+  </footer>
+ </div>
+</body>
+</html>-->
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Olympics Database</title>
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript">
+var slideimages = new Array() 
+slideimages[0] = new Image() 
+slideimages[0].src = "pic2.jpg" 
+slideimages[1] = new Image()
+slideimages[1].src = "usain_bolt2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "pic11.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "pic12.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "pic14.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "pic15.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "pic16.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "pic17.jpg"
+</script>
+</head>
+<body>
+<div style="width:100%;height:100%;background-image:url('olympic3.jpg');background-repeat:no-repeat;background-size:cover;opacity:100;">
+ <div id="big_wrapper">
+   <header id="the_header">
+    <h1>OLYMPIC GAMES DATABASE</h1>
+	
+   </header>
+   <nav id="navigation">
+   
+  <div class="navlinks">
+		<ul>
+			<li><div class="links"><a href="test2.html">Home</a></div></li>
+			<li><div class="links"><a href="database.html">Databases</a></div></li>
+			<li><div class="links"><a href="login.html">Login</a></div></li>
+		</ul>
+	</div>
+	</nav>
+   
+  <section id="the_main">
+  <h2>Welcome!!!</h2>
+   <img  style=" position:absolute; top:230px; left:250px;; padding:10px;" src="race2.jpg" id="slide"  width="550" height="325" />
+<script type="text/javascript">
+var step=0
+function slideit(){
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<7)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",500)
+}
+
+slideit()
+
+</script>
+  
+  </section>
+   <div>
+   <aside id="the_news">
+     <h2>NEWS </h2>
+	   
+	  <a href="http://www.rio2016.com"> The next olympic games is in 2016</a><br/><br/>
+	  <a href="http://www.rio2016.com"> <img  style="1top:380px; left:750px;; padding:10px;" src="pic5.jpg"   width="150" height="100" /></a><br />
+
+	    
+	   <a href="http://www.olympic.org">The next olympic games is in Brazil</a><br/>
+	   	  <img  style=" top:180px; left:550px;; padding:10px;" src="race2.jpg"   width="170" height="100" />
+
+ 
+   </div>
+   <footer id="the_footer">
+   
+    
+  </footer>
+ </div>
+</body>
+</html>
