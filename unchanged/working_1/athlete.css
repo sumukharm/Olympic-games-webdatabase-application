@@ -1,0 +1,71 @@
+*{
+  margin:0px;
+  padding:0px;
+ }
+
+h1{
+  font:bold 20px tahoma;
+  
+}
+
+h2{
+  font:bold 14px tahoma;
+}
+
+header,nav,section,footer,article,aside{
+ display:block;
+}
+body{
+ text-align:center;
+}
+#big_wrapper{
+  width:1000px;
+  margin:20px auto;
+  text-align:left;
+  background:#E6E6E6;
+}
+#the_header{
+ background:#FFFFC2;
+ text-align:center;
+ margin:0px;	
+ padding:35px;
+  background-image:url(olympic_rings1.jpg);
+ background-repeat:no-repeat;
+ background-position:783px 0px;
+}
+
+#navigation{
+ background:#C2FFA3;
+ color:black;
+}
+
+#navigation li{
+ display:inline-block;
+ list-style:none;
+ padding:5px;
+ font:bold 14px tahoma;	
+}
+#the_main{
+ float:left;
+ width:500px;
+ margin:30px;
+ height:410px;
+}
+#the_news{
+ float:right;
+ width:215px;
+ padding:30px;
+ background:#EBEBFF;
+ color:black;
+ height:300px;
+ border:1px solid #FFCCCC;
+ }
+#the_footer{
+ clear:both;
+ text-align:center;
+ padding:35px;
+ border-top: 2px solid gray;
+ background:gray;
+ color:white;
+}
+
